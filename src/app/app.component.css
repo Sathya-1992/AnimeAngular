@@ -1,0 +1,18 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;
+    width: 100vw;
+}
+h2{
+    text-align: center;
+}
+.align h2{
+    color: red;
+}
+.align p{
+    color: blue;
+}
