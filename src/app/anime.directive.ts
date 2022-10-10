@@ -13,16 +13,19 @@ export class AnimeDirective implements DoCheck{
       var tl = anime.timeline({
         targets : this.appAnime.target,
         easing: 'easeOutExpo',
-        duration: 750,
+        duration: 250,
         loop:true,
         direction : 'alternate'
       });
 
       tl.add({
-        translateY : -200
+        scale:2,
       })
       .add({
-        translateX : 200
+        translateY : -50
+      })
+      .add({
+        rotate:[-360,360]
       })
       
     }
